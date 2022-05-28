@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Class Note Taker</title>
+    <script src="https://cdn.jsdelivr.net/remarkable/1.7.1/remarkable.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/print.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Simple Note Taker</h1>
+    </header>
+   
+    <note-list id="note-list" class="cards">
+        <div class="card noprint">
+            <header>
+                <h2>Markdown Cheatsheet</h2>
+            </header>
+            <table class="table table-bordered">
+                <thead class="thead-light">
+                  <tr>
+                    <th>Element</th>
+                    <th>Markdown Syntax</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a href="https://www.markdownguide.org/basic-syntax/#bold">Bold</a></td>
+                    <td><code>**bold text**</code></td>
+                  </tr>
+                  <tr>
+                    <td><a href="https://www.markdownguide.org/basic-syntax/#italic">Italic</a></td>
+                    <td><code>*italicized text*</code></td>
+                  </tr>
+                  <tr>
+                    <td><a href="https://www.markdownguide.org/basic-syntax/#blockquotes-1">Blockquote</a></td>
+                    <td><code>&gt; blockquote</code></td>
+                  </tr>
+                  <tr>
+                    <td><a href="https://www.markdownguide.org/basic-syntax/#ordered-lists">Ordered List</a></td>
+                    <td><code>
+                      1. First item<br>
+                      2. Second item<br>
+                      3. Third item<br>
+                    </code></td>
+                  </tr>
+                  <tr>
+                    <td><a href="https://www.markdownguide.org/basic-syntax/#code">Code</a></td>
+                    <td><code>`code`</code></td>
+                  </tr>
+                  <tr>
+                    <td><a href="https://www.markdownguide.org/basic-syntax/#horizontal-rules">Horizontal Rule</a></td>
+                    <td><code>---</code></td>
+                  </tr>
+                  <tr>
+                    <td><a href="https://www.markdownguide.org/basic-syntax/#links">Link</a></td>
+                    <td><code>[title](https://www.example.com)</code></td>
+                  </tr>
+                  <tr>
+                    <td><a href="/basic-syntax/#images-1">Image</a></td>
+                    <td><code>![alt text](image.jpg)</code></td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+        <div class="card noprint">
+            <header>
+                <h2>Add Note Card</h2>
+            </header>
+            <textarea id="note-text" name="markdownbody" placeholder="Markdown Content"></textarea>
+            <footer>
+                <button id="add-note" class="full-width">Save</button>
+            </footer>
+        </div>
+    
+            
+    </note-list>
+    
+    <script src="js/main.js" />
+</body>
+</html>

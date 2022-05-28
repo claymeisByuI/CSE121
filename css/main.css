@@ -1,0 +1,206 @@
+:root{
+    background-color: #ffe6df;
+    margin: 0px;
+    box-sizing: border-box;
+    --heading-font: "Ubuntu", serif;
+    --heading-color: #ff5722;
+    --accent-color: #ff5722;
+    --accent-color-dark: #d13200;
+    --accent-color-light: #ff855e;
+    --heading-background: #ffe6df;;
+    --color-white: #ffe6df;
+    --trans-color: rgba(196 207 207 / .7);
+    --headline-background: #967c63
+}
+
+body{
+    background-color: var(--background-color);
+}
+header {
+    background-color: var(--heading-background);
+    padding: 5px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    border-bottom: 1px solid var(--accent-color);
+    text-align: center;
+    color:var(--heading-color)
+}
+header h1{
+    margin-left:auto;
+    margin-right:auto;
+}
+h1, h2, h3, h4, h5{
+    font-family: "ubuntu", serif;
+
+}
+
+
+.form-input-area{
+    font: 95% Arial, Helvetica, sans-serif;
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 16px;
+    background: #F7F7F7;
+}
+.form-input-area h1{
+    background: #43D1AF;
+    padding: 20px 0;
+    font-size: 140%;
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+    margin: -16px -16px 16px -16px;
+}
+.full-width{
+    width:100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    padding: 3%;
+    background: var(--accent-color);
+    border-bottom: 2px solid var(--accent-color-dark);
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;	
+    color: #fff;
+}
+.form-input-area input[type="submit"]:hover,
+.form-input-area button:hover,
+.form-input-area input[type="button"]:hover{
+    background: var(--accent-color-light);
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+    display: grid;
+    grid-template-rows: max-content 200px 1fr;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card header{
+    display:flex;
+    width:100%;
+    background-color: var(--accent-color);
+    color: var(--color-white);
+}
+h2 {
+    display: block;
+    font-size: 1.25em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.card h2 {
+    margin: 0;
+    padding: 0.5rem;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 20px;
+}
+.card .content {
+    padding: .5rem;
+}
+
+.card footer {
+    background-color: #333;
+    color: #fff;
+    padding: .5rem;
+}
+
+.flat-button{
+    background-color: transparent;
+    border-width: 0px;
+    transition: 0.2s;
+    margin:5px;
+    padding: 5px;
+}
+.flat-button:hover{
+    border-width: 1px;
+}
+
+.card .content h1, .card .content h2, .card .content h3{
+  background-color: var(--accent-color-light);
+  width: 100%;
+  margin:0px;
+}
+
+
+/* pulled from css.gg */
+.gg-trash-empty {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 10px;
+    height: 12px;
+    border: 2px solid transparent;
+    box-shadow: 0 0 0 2px;
+    border-bottom-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+    margin-top: 4px
+}
+.gg-trash-empty::after,
+.gg-trash-empty::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute
+}
+.gg-trash-empty::after {
+    background: currentColor;
+    border-radius: 3px;
+    width: 16px;
+    height: 2px;
+    top: -4px;
+    left: -5px
+}
+.gg-trash-empty::before {
+    width: 10px;
+    height: 4px;
+    border: 2px solid;
+    border-bottom: transparent;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    top: -7px;
+    left: -2px
+}
+
+.table .thead-light th {
+    color: var(--color-white);
+    background-color:  var(--accent-color);
+    border-color:  var(--accent-color-dark);
+
+}
+.table-bordered {
+    border: 1px solid  var(--accent-color-light);
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+}
+table {
+    border-collapse: collapse;
+}
+
+.table-bordered td, .table-bordered th {
+    border: 1px solid  var(--accent-color-light);
+    font-family: "ubuntu", serif;
+}
+
